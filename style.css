@@ -158,25 +158,16 @@ footer p{
    }
 }
 
-@media screen and (max-width:992) {
-    .products{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-    }
-    /* nav{
-        display: none;
-    }
-    .journey,header{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+
+@media screen and (min-width:689px) and (max-width:992px) {
+    .products
+    {
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
     }
     .Company-logo ul{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        row-gap: 10px;
-    } */
-
+        display: flex;
+        flex-wrap: wrap;
+    }
     
 }
