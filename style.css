@@ -6,6 +6,9 @@ body{
     align-items: center;
     margin: 50px;
 }
+section{
+    margin-bottom: 40px;
+}
 header, .journey{
     display: flex;
    justify-content: space-between;
@@ -32,7 +35,7 @@ h1{
 }
 .journey img{
     height:350px;
-background-color: gainsboro;
+    background-color: gainsboro;
     border-radius: 175px;
 
 }
@@ -54,5 +57,47 @@ background-color: gainsboro;
     grid-template-columns: repeat(7,1fr);
     column-gap: 15px;
     margin-top: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+}
+.collections h3{
+    text-align: center;
+    font-size: 25px;
+}
+.collections h2{
+    margin-top: 0;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 0;
+
+}
+.price{
+    font-size: 23px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.star{
+    color: gold;
+    margin-top: 0;
+}
+.ratting{
+    width: 55%;
+display: flex;
+justify-content: space-between;
+margin-bottom: 0;
+}
+.details{
+    margin-top: 0;
+}
+.product-name{
+   box-shadow:  5px 5px 2px 2px rgba(128, 128, 128, 0.247);
+    padding: 10px;
+    border-radius: 5px;
+}
+.color{
+    color:grey;
 }
