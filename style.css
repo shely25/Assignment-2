@@ -7,9 +7,9 @@ body{
     margin: 0px;
 }
 section{
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
-header, .journey{
+header, .journey,.my-part{
     display: flex;
    justify-content: space-between;
    margin: 10px;
@@ -37,7 +37,11 @@ h1{
     height:350px;
     background-color: gainsboro;
     border-radius: 175px;
-
+    transition:transform 1s linear;
+    
+}
+.journey img:hover{
+    transform: scale(1.2);
 }
 .button{
     display: inline-block;
@@ -47,6 +51,9 @@ h1{
     margin-top:5px;
     color: white;
     border-radius: 30px;
+}
+.button:hover{
+    background-color:hsl(338, 69%, 37%); ;
 }
 .arrow{
     font-size: 25px;
@@ -98,6 +105,11 @@ margin-bottom: 0;
     padding: 10px;
     border-radius: 5px;
 }
+.collections img:hover{
+    transform: scale(0.8);
+    transition: transform 1s linear;
+
+}
 .color{
     color:grey;
 }
@@ -129,10 +141,18 @@ footer p{
     text-align: center;
 }
 .footer{
-    background-color: indigo;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: rgb(54, 54, 99);
     width:100%;
     margin-bottom: 0;
     color: white;
+}
+.my-part img{
+    height: 310px;
+}
+.my-part article{
+    margin-top: 0;
 }
 @media screen and (max-width:688px){
    .products{
@@ -142,7 +162,7 @@ footer p{
    nav{
        display: none;
    }
-   .journey,header{
+   .journey,header,.my-part{
        display: flex;
        flex-direction: column;
        justify-content: center;
@@ -168,5 +188,11 @@ footer p{
         display: flex;
         flex-wrap: wrap;
     }
-    
+    .my-part{
+       display:flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+
+    }
 }
